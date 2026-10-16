@@ -28,23 +28,38 @@ Je mehr Informationen Sie bereitstellen (z. B. Fehlermeldungen, Produktart oder 
 <form>
 
 <p>Firma:</p>
-<input type="text" name="Firma"> 
+<input class="Text" type="text" name="Firma"> 
 
 <p>Name:</p>
-<input type="text" name="name"> 
+<input class="Text" type="text" name="name"> 
 
 <p>E-Mail:</p>
-<input type="email" name="email">
-
-<!-- Hier ein Button zur Kategorisierung-->
-
-<p>Problem:</p>
-<textarea name="problem" rows="8" cols="50"></textarea>
+<input class="Text" type="email" name="email">
 
 <br><br>
-<button type="submit">Ticket senden</button>
-</form>
 
+<label for="kategorie">Kategorie auswählen:</label>
+<br><br>
+<select id="kategorie" name="kategorie">
+    <option>Elektronik</option>
+    <option>Serviceanfrage</option>
+    <option>Netzwerkverbindung</option>
+    <option>Softwareproblem</option>
+    <option>Hardwaredefekt</option>
+    <option>E-Mail Problem</option>
+    <option>Sonstiges</option>
+</select>
+
+<br><br>
+
+<p>Problem:</p>
+<textarea class="Text" name="problem" rows="8" cols="50"></textarea>
+
+<br><br>
+<button class="maps-button" type="submit">Ticket senden</button>
+</form>
+<input type="checkbox" id="daten">
+<label for="daten">Ich akzeptiere die Datenschutzbestimmungen</label>
 <br><br>
 
 <h3>Weitere Informationen:</h3>

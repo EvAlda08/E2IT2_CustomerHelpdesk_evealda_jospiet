@@ -1,0 +1,135 @@
+:root {
+    --dunkelblau: #123b7a;
+    --hauptblau: #1c4fa1;
+    --hellblau: #4f8cff;
+    --sehrhellblau: #eaf2ff;
+    --weiss: #ffffff;
+}
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+ 
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+ 
+.header-title h1 {
+    color: #1c4fa1;
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a:link {
+    color: #090080;
+    text-decoration: none;
+}
+ 
+a:visited {
+    color: #090080;
+}
+ 
+a:hover {
+    color: white;
+    background-color: #090080;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+ 
+a:active {
+    color: yellow;
+}
+ 
+.maps-button {
+    display: inline-block;
+    background-color: #090080;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: 2px solid #090080;
+    border-radius: 8px;
+    font-weight: bold;
+}
+ 
+.maps-button:hover {
+    background-color: #5067ce;
+    transform: scale(1.05);
+}
+ 
+.maps-button:active {
+    background-color: #090080;
+}
+ 
+input:focus {
+    border: 3px solid #090080;
+    background-color: #fff0f5;
+    outline: none;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #090080;
+    font-weight: bold;
+}
+ 
+li:first-child {
+    color: #090080;
+    font-weight: bold;
+}
+ 
+li:last-child {
+    color: #090080;
+}
+ 
+li:nth-child(3) {
+    background-color: #ffd9e0;
+}
+ 
+li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+ 
+li:nth-child(odd) {
+    background-color: #ffffff;
+}
+ 
+h2::before {
+    content: "✦ ";
+    color: #090080;
+}
+ 
+h2::after {
+    content: " ✦";
+    color: #090080;
+}
+ 
+p::first-letter {
+    font-size: 150%;
+    color: #090080;
+    font-weight: bold;
+}
+ 
+section {
+    border: 2px solid #090080;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #1c4fa1;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+span{
+    font-family: 'Times New Roman', Times, serif;
+}
+.Überschrift{
+ color: #090080;
+ padding: 10px #4f8cff;
+}
