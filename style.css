@@ -6,34 +6,31 @@
     --weiss: #ffffff;
 }
 .header-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin: 30px 0 !important;
+    text-align: center !important;
 }
- 
 .logo-img {
-    width: 80px;
-    height: auto;
+    width: 160px !important;
+    height: auto !important;
 }
- 
 .header-title h1 {
     color: #1c4fa1;
-    font-size: 42px;
-    margin: 0;
+    font-size: 32px !important;
+    margin: 0 !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 a:link {
     color: #090080;
     text-decoration: none;
 }
- 
 a:visited {
     color: #090080;
 }
- 
 a:hover {
     color: white;
     background-color: #090080;
@@ -132,4 +129,28 @@ span{
 .Überschrift{
  color: #090080;
  padding: 10px #4f8cff;
+}
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: transparent !important;
+}
+body {
+  position: relative;
+  z-index: 1;
+}
+#bg-video {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: -9999 !important;
+  object-fit: cover !important;
+  pointer-events: none !important;
 }

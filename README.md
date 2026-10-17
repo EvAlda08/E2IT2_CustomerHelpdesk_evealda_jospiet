@@ -2,6 +2,7 @@
 
 Joshua:
 Tabelle - So funktioniert unser Customer Helpdesk,
+Logo
 Dienstleistungsliste,
 Google-Maps-Button,
 Formular- und Linkelemente,
@@ -9,6 +10,7 @@ CSS-Selektoren: a:link , a:hover , li:first-child, li:nth-child(even) , border u
 
 Evelina:
 Tabelle Telefonische Erreichbarkeit,
+Video-Hintergrund
 Liste mit Problemkategorien,
 Absende-Button,
 Formular- und Linkelemente,
