@@ -1,85 +1,176 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 
-<head>  
-<title>Customer Helpdesk</title> 
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Helpdesk</title>
+    <link rel="stylesheet" href="style.css">
+
+<div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<div id="tsparticles"></div>
+
+<script>
+tsParticles.load("tsparticles", {
+    particles:{
+        number:{value:80},
+        color:{value:"#00e5ff"},
+        links:{
+            enable:true,
+            color:"#00e5ff"
+        },
+        move:{enable:true}
+    }
+});
+</script>
+
+</div>
+
+
 </head>
 
 <body>
-  <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -9999; overflow: hidden; pointer-events: none;">
-        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="hintergrund.mp4" type="video/mp4">
-        </video>
+
+
+
+    <div class="overlay"></div>
+
+   <nav class="navbar">
+    <a href="index.html">🏠 Helpdesk</a>
+    <a href="help.html">❓ Hilfe</a>
+    <a href="kontakt.html">📞 Kontakt</a>
+    <a href="anmeldung.html">👤 Anmeldung</a>
+    <a href="datenschutz.html">🔒 Datenschutz</a>
+    <a href="impressum.html">📄 Impressum</a>
+</nav>
+
+    <div class="container">
+
+        <header class="header-title">
+            <img src="Logo (1).png" alt="Logo" class="logo-img">
+            <h1>Customer Helpdesk</h1>
+        </header>
+
+        <section class="hero">
+            <h2>🚀 Ihr direkter Draht zum Support</h2>
+
+            <p>
+                Bitte schildern Sie Ihr Problem und hinterlassen Sie Ihre
+                Kontaktdaten. Unser Support-Team kümmert sich schnell und
+                zuverlässig um Ihr Anliegen.
+            </p>
+        </section>
+
+        <h3>📋 So funktioniert unser Helpdesk</h3>
+
+        <ul>
+            <li>📝 Sie erstellen ein Ticket.</li>
+            <li>🔍 Unser Team analysiert Ihr Anliegen.</li>
+            <li>📞 Wir kontaktieren Sie.</li>
+            <li>✅ Gemeinsam lösen wir das Problem.</li>
+        </ul>
+
+<h3>
+    Wollen Sie versuchen, Ihr Problem mithilfe unseres KI-Assistenten zu lösen? Dann starten Sie den Assistenten direkt hier:
+</h3>
+
+<br>
+
+        <a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_medium=paid-media&utm_campaign=bkws&pt=9008&mt=8&ct=p-growth-sem-bkws&gclsrc=aw.ds&gad_source=1&gad_campaignid=21109724623&gbraid=0AAAAApk5Bhli1OyPGIlGkjuraiCdfDxRM&gclid=EAIaIQobChMIyYr7rs7flwMV6sGxBx0ZMSHmEAAYASAAEgJRAfD_BwE" target="_blank">
+    <button class="submit-button">🤖 KI-Assistent starten</button>
+</a>
+<br> <br>
+        <form>
+
+            <div class="form-group">
+                <label for="firma">Firma</label>
+                <input type="text" id="firma" placeholder="Ihre Firma">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Vor- und Nachname">
+            </div>
+
+            <div class="form-group">
+                <label for="mail">E-Mail</label>
+                <input type="email" id="mail" placeholder="beispiel@firma.de">
+            </div>
+
+            <div class="form-group">
+                <label for="kategorie">Kategorie</label>
+
+                <select id="kategorie">
+                    <option>💻 Elektronik</option>
+                    <option>📞 Serviceanfrage</option>
+                    <option>🌐 Netzwerkverbindung</option>
+                    <option>🖥️ Softwareproblem</option>
+                    <option>🔧 Hardwaredefekt</option>
+                    <option>📧 E-Mail Problem</option>
+                    <option>❓ Sonstiges</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="problem">Problembeschreibung</label>
+
+                <textarea id="problem" rows="8"
+                    placeholder="Bitte beschreiben Sie Ihr Problem möglichst genau..."></textarea>
+            </div>
+
+            <div class="checkbox-area">
+                <input type="checkbox" id="datenschutz">
+                <label for="datenschutz">
+                    Ich akzeptiere die Datenschutzbestimmungen.
+                </label>
+            </div>
+
+            <button class="submit-button" type="submit">
+                🎫 Ticket senden
+            </button>
+
+        </form>
+
+</div>
+
+        <footer>
+            © 2026 Customer Helpdesk | IT-Support & Service
+        </footer>
+
+    </div>
+</div>
+
+
+        <div class="support-widget">
+
+    <div class="support-content">
+
+        <h2>📞 Beratung & Support</h2>
+
+        <p class="phone">+49 12345678</p>
+
+        <a href="tel:+4912345678" class="call-btn">
+            Anrufen
+        </a>
+
+        <div class="support-menu">
+
+            <a href="kontakt.html">📞<br>Kontakt</a>
+
+            <a href="help.html">❓<br>Hilfe</a>
+
+            <a href="anmeldung.html">👤<br>Login</a>
+
+        </div>
+
     </div>
 
-<header class="header-title">
-    <img class="logo-img" src="Logo.png" width="150">
-<h1>Customer Helpdesk</h1>
-</header>
-
-<p>Bitte schildern Sie Ihr Problem und hinterlassen Sie Ihre Kontaktdaten. Unser Support-Team wird Ihrem Anliegen nachgehen und sich mit Ihnen in Verbindung setzen.
-
-Je mehr Informationen Sie bereitstellen (z. B. Fehlermeldungen, Produktart oder aktuelle Situation), desto schneller werden wir Ihnen weiterhelfen.</p>
-
-<h3>So funktioniert unser Customer Helpdesk</h3>
-
-<ol>
-<li>Sie hinterlassen uns Ihr Anliegen.</li>
-<li>Wir prüfen und bearbeiten Ihr Anliegen.</li>
-<li>Wir melden uns bei Ihnen zurück.</li>
-<li>Gemeinsam kümmern wir uns um die Lösung Ihres Problems.</li>
-</ol>
-
-<form>
-
-<p>Firma:</p>
-<input class="Text" type="text" name="Firma"> 
-
-<p>Name:</p>
-<input class="Text" type="text" name="name"> 
-
-<p>E-Mail:</p>
-<input class="Text" type="email" name="email">
-
-<br><br>
-
-<label for="kategorie">Kategorie auswählen:</label>
-<br><br>
-<select id="kategorie" name="kategorie">
-    <option>Elektronik</option>
-    <option>Serviceanfrage</option>
-    <option>Netzwerkverbindung</option>
-    <option>Softwareproblem</option>
-    <option>Hardwaredefekt</option>
-    <option>E-Mail Problem</option>
-    <option>Sonstiges</option>
-</select>
-
-<br><br>
-
-<p>Problem:</p>
-<textarea class="Text" name="problem" rows="8" cols="50"></textarea>
-
-<br><br>
-<button class="maps-button" type="submit">Ticket senden</button>
-</form>
-<input type="checkbox" id="daten">
-<label for="daten">Ich akzeptiere die Datenschutzbestimmungen</label>
-<br><br>
-
-<h3>Weitere Informationen:</h3>
-
-<tr> 
-    <td>Zum <a href=Impressum.html>Impressum</a></td> 
-    <br>
-    <td>Zu den <a href="Datenschutz.html">Datenschutzhinweisen</a></td> 
-    <br>
-   <td><a href="Kontakt.html">Kontaktieren</a> Sie uns!</td>
-</tr>
-
+    <div class="widget-button">
+        💬
+    
+</div>
 </body>
-
-
 
 </html>
