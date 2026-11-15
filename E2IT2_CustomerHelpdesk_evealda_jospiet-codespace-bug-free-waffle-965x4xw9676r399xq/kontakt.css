@@ -1,0 +1,120 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    padding:30px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+}
+
+.maps-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+}
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    margin-bottom:30px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(20px);
+    border-radius:15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:#00e5ff;
+    color:black;
+}
+
+a{
+    text-decoration: none;
+     font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+   
+
+}
+
+iframe{
+    margin-top:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.maps-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.maps-btn:hover{
+    transform:scale(1.05);
+    background:#4f8cff;
+    color:white;
+}
+
+
+
+
+.background-video {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(28, 79, 161, 0.7)
+    );
+    z-index: -1;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 25px;
+
+    backdrop-filter: blur(20px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}

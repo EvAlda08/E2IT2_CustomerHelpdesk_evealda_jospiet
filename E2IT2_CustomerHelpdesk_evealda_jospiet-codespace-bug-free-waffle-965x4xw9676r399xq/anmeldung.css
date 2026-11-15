@@ -1,0 +1,39 @@
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+.login-container{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    width:400px;
+}
+
+h1{
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#00e5ff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+a{
+    color:#00e5ff;
+    text-decoration:none;
+}
