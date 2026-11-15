@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticketstatus | Customer Helpdesk</title>
+  <link rel="stylesheet" href="ticketstatus.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Hauptnavigation">
+    <a href="index.html">🏠 Helpdesk</a>
+    <a href="help.html">❓ Hilfe</a>
+    <a href="kontakt.html">📞 Kontakt</a>
+    <a href="termine.html">📅 Termine</a>
+    <a href="ticketstatus.html" aria-current="page">🎫 Ticketstatus</a>
+    <a href="anmeldung.html">👤 Anmeldung</a>
+    <a href="datenschutz.html">🔒 Datenschutz</a>
+    <a href="impressum.html">📄 Impressum</a>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <img class="logo-img" src="Logo (1).png" alt="Customer Helpdesk Logo">
+      <div>
+        <p class="eyebrow">CUSTOMER HELPDESK</p>
+        <h1>🎫 Ticketstatus</h1>
+        <p>Verfolgen Sie den Bearbeitungsstand Ihrer Supportanfrage.</p>
+      </div>
+    </header>
+
+    <section aria-labelledby="ablauf">
+      <h2 id="ablauf">So läuft eine Supportanfrage ab</h2>
+      <div class="steps">
+        <article class="step"><span class="step-icon">1</span><h3>Eingegangen</h3><p>Ihre Anfrage wurde aufgenommen.</p></article>
+        <article class="step"><span class="step-icon">2</span><h3>In Bearbeitung</h3><p>Unser Team prüft Ihr Anliegen.</p></article>
+        <article class="step"><span class="step-icon">3</span><h3>Abgeschlossen</h3><p>Das Problem wurde gelöst.</p></article>
+      </div>
+    </section>
+
+    <section class="examples" aria-labelledby="tickets">
+      <h2 id="tickets">Beispiel-Tickets</h2>
+      <p class="section-intro">Klicken Sie auf ein Ticket, um den Bearbeitungsstand zu sehen.</p>
+
+      <details class="ticket" open>
+        <summary><span><strong>#CH-2026-001</strong><small>WLAN-Verbindung funktioniert nicht</small></span><span class="status processing">In Bearbeitung</span></summary>
+        <div class="ticket-body"><p><strong>Kategorie:</strong> Netzwerkverbindung</p><ol class="timeline"><li class="done"><strong>Ticket eingegangen</strong><span>Die Anfrage wurde aufgenommen.</span></li><li class="current"><strong>In Bearbeitung</strong><span>Der Support untersucht das Problem.</span></li><li><strong>Abgeschlossen</strong><span>Dieser Schritt steht noch aus.</span></li></ol></div>
+      </details>
+
+      <details class="ticket">
+        <summary><span><strong>#CH-2026-002</strong><small>Drucker wird nicht erkannt</small></span><span class="status received">Eingegangen</span></summary>
+        <div class="ticket-body"><p><strong>Kategorie:</strong> Hardware</p><ol class="timeline"><li class="current"><strong>Ticket eingegangen</strong><span>Die Anfrage wartet auf die Bearbeitung.</span></li><li><strong>In Bearbeitung</strong><span>Dieser Schritt steht noch aus.</span></li><li><strong>Abgeschlossen</strong><span>Dieser Schritt steht noch aus.</span></li></ol></div>
+      </details>
+
+      <details class="ticket">
+        <summary><span><strong>#CH-2026-003</strong><small>Passwort zurücksetzen</small></span><span class="status finished">Abgeschlossen</span></summary>
+        <div class="ticket-body"><p><strong>Kategorie:</strong> Anmeldung</p><ol class="timeline"><li class="done"><strong>Ticket eingegangen</strong><span>Die Anfrage wurde aufgenommen.</span></li><li class="done"><strong>In Bearbeitung</strong><span>Der Support hat das Anliegen geprüft.</span></li><li class="done"><strong>Abgeschlossen</strong><span>Das Problem wurde gelöst.</span></li></ol></div>
+      </details>
+    </section>
+
+    <div class="bottom-actions"><p>Sie haben noch kein Ticket erstellt oder benötigen Hilfe?</p><div class="actions"><a class="primary-button" href="index.html">🎫 Ticket erstellen</a><a class="secondary-button" href="kontakt.html">📞 Kontakt</a></div></div>
+    <footer>© 2026 Customer Helpdesk | IT-Support &amp; Service</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termine | Customer Helpdesk</title>
+    <link rel="stylesheet" href="termine.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Hauptnavigation">
+        <a href="index.html">🏠 Helpdesk</a>
+        <a href="help.html">❓ Hilfe</a>
+        <a href="kontakt.html">📞 Kontakt</a>
+        <a href="termine.html" aria-current="page">📅 Termine</a>
+        <a href="ticketstatus.html" aria-current="page">🎫 Ticketstatus</a>
+        <a href="anmeldung.html">👤 Anmeldung</a>
+        <a href="datenschutz.html">🔒 Datenschutz</a>
+        <a href="impressum.html">📄 Impressum</a>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <div class="icon-circle" aria-hidden="true">📅</div>
+            <h1>Termin vereinbaren</h1>
+            <p>Wählen Sie Ihren Wunschtermin für eine persönliche Beratung oder Unterstützung durch unser Support-Team.</p>
+        </header>
+
+        <section class="info-panel" aria-label="Informationen zur Terminvereinbarung">
+            <div><span aria-hidden="true">🕒</span><strong>Servicezeiten</strong><small>Montag bis Samstag, 08:00–18:00 Uhr</small></div>
+            <div><span aria-hidden="true">💻</span><strong>Flexible Beratung</strong><small>Online oder vor Ort</small></div>
+            <div><span aria-hidden="true">✉️</span><strong>Terminanfrage</strong><small>Bestätigung erfolgt durch unser Team</small></div>
+        </section>
+
+        <section class="booking-section" aria-labelledby="booking-title">
+            <h2 id="booking-title">🗓️ Ihren Wunschtermin auswählen</h2>
+            <p class="section-description">Füllen Sie das Formular aus. Beim Absenden versucht Ihr Browser, die Anfrage über Ihr E-Mail-Programm zu verschicken.</p>
+
+            <form id="termin-form" action="mailto:helpdesk@chap.de?subject=Terminanfrage%20Customer%20Helpdesk" method="post" enctype="text/plain">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Vor- und Nachname *</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="Ihr vollständiger Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse *</label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="beispiel@firma.de" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="datum">Wunschdatum *</label>
+                        <input id="datum" name="datum" type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="uhrzeit">Wunschuhrzeit *</label>
+                        <select id="uhrzeit" name="uhrzeit" required>
+                            <option value="">Bitte Uhrzeit auswählen</option>
+                            <option>08:00</option><option>09:00</option><option>10:00</option>
+                            <option>11:00</option><option>12:00</option><option>13:00</option>
+                            <option>14:00</option><option>15:00</option><option>16:00</option>
+                            <option>17:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="terminart">Art des Termins *</label>
+                        <select id="terminart" name="terminart" required>
+                            <option value="">Bitte auswählen</option>
+                            <option>Online-Beratung</option>
+                            <option>Vor-Ort-Termin</option>
+                            <option>Telefonische Beratung</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="thema">Thema *</label>
+                        <select id="thema" name="thema" required>
+                            <option value="">Bitte Thema auswählen</option>
+                            <option>Softwareproblem</option>
+                            <option>Hardwareproblem</option>
+                            <option>Netzwerk / Internet</option>
+                            <option>E-Mail / Benutzerkonto</option>
+                            <option>Allgemeine IT-Beratung</option>
+                            <option>Sonstiges</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nachricht">Weitere Informationen (optional)</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" placeholder="Beschreiben Sie kurz Ihr Anliegen ..."></textarea>
+                </div>
+                <div class="checkbox-area">
+                    <input id="datenschutz" name="datenschutz_bestaetigt" value="Ja" type="checkbox" required>
+                    <label for="datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden. *</label>
+                </div>
+                <button type="submit" class="submit-button">✉️ Terminanfrage per E-Mail senden</button>
+                <p class="form-note" id="status" role="status">* Pflichtfelder. Die Zeit ist noch nicht reserviert. Der E-Mail-Versand hängt vom Browser und dem eingerichteten E-Mail-Programm ab.</p>
+            </form>
+        </section>
+    </main>
+    <footer>© 2026 Customer Helpdesk | IT-Support &amp; Service</footer>
+
+
+</body>
+</html>
